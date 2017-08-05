@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWCFService", "SimpleWCFService\SimpleWCFService.csproj", "{DDE2E8A3-8769-49F2-803F-11C21446DFA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWCFServiceHost", "SimpleWCFServiceHost\SimpleWCFServiceHost.csproj", "{8C091BE6-E794-47CB-85B5-30005D6FEAAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDE2E8A3-8769-49F2-803F-11C21446DFA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE2E8A3-8769-49F2-803F-11C21446DFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE2E8A3-8769-49F2-803F-11C21446DFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE2E8A3-8769-49F2-803F-11C21446DFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C091BE6-E794-47CB-85B5-30005D6FEAAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C091BE6-E794-47CB-85B5-30005D6FEAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C091BE6-E794-47CB-85B5-30005D6FEAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C091BE6-E794-47CB-85B5-30005D6FEAAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
