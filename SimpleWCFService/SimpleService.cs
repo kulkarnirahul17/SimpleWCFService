@@ -8,8 +8,7 @@ using System.Threading;
 
 namespace SimpleWCFService
 {
-    [ServiceBehavior(InstanceContextMode =InstanceContextMode.Single, 
-        ConcurrencyMode =ConcurrencyMode.Multiple)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession, ConcurrencyMode = ConcurrencyMode.Reentrant)]
     public class SimpleService : ISimpleService
     {
         public void DoWork()

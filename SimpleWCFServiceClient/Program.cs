@@ -12,7 +12,7 @@ namespace SimpleWCFServiceClient
         static void Main(string[] args)
         {
             var client = new ServiceReference1.SimpleServiceClient();
-            for (int i = 1; i <= 100; i++)
+            for (int i = 1; i <= 250; i++)
             {
                 var thread = new Thread(client.DoWork);
                 thread.Start();
