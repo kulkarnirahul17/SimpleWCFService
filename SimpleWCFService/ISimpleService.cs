@@ -12,6 +12,6 @@ namespace SimpleWCFService
     public interface ISimpleService
     {
         [OperationContract]
-        void DoWork();
+        string DoWork();
     }
 }

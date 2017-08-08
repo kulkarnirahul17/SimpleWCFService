@@ -8,13 +8,15 @@ using System.Threading;
 
 namespace SimpleWCFService
 {
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession, ConcurrencyMode = ConcurrencyMode.Reentrant)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single, ConcurrencyMode = ConcurrencyMode.Multiple)]
     public class SimpleService : ISimpleService
     {
-        public void DoWork()
+        public string DoWork()
         {
             Thread.Sleep(1000);
-            Console.WriteLine($"Thread {Thread.CurrentThread.ManagedThreadId} started processing at {DateTime.Now}");
+            var response = $"Thread {Thread.CurrentThread.ManagedThreadId} started processing at {DateTime.Now}";
+            Console.WriteLine(response);
+            return response;
         }
     }
 }
